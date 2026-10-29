@@ -34,7 +34,7 @@ A collection of projects regarding data structures and algorithms written in C++
 
 ## C++ Standard
 
-The projects use **C++23** unless otherwise specified.
+The projects use **C++20** unless otherwise specified.
 
 ---
 
