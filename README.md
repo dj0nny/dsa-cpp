@@ -9,8 +9,8 @@ A collection of projects regarding data structures and algorithms written in C++
 | #  | Project   | Description                                | Status          |
 | -- | --------- | ------------------------------------------ | --------------- |
 | 01 | Static Array | Fixed-size contiguous memory allocation with O(1) random access.  | ✅ Completed   |
-<!--| 02 |  |  |  |
-| 03 |  |  | 🚧 In progress |
+| 02 | Dynamic Array | Resizable array with amortized O(1) insertion at the end. Foundation of std::vector | 🚧 In progress |
+<!-- | 03 |  |  | 🚧 In progress |
 | 04 | — | —     | —                                           | ⏳ Planned     |
 | 05 | — | —     | —                                           | ⏳ Planned     |
 | 06 | — | —     | —                                           | ⏳ Planned     |
