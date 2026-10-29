@@ -1,39 +1,31 @@
-#include <iostream>
 #include <cstddef>
+#include <iostream>
 #include <stdexcept>
 
-template<typename T, std::size_t N>
+template <typename T, std::size_t N>
 class StaticArray {
-  private:
-    T m_data[N];
+ private:
+  T m_data[N];
 
-  public:
-    constexpr std::size_t size() const {
-      return N;
-    }
+ public:
+  constexpr std::size_t size() const { return N; }
 
-    // TODO: Add operator[] (non-const version)
-    T& operator[](std::size_t index) {      
-      return m_data[index];
-    }
-    // TODO: Add operator[] (const version)
-    const T& operator[](std::size_t index) const {
-      return m_data[index];
-    }
-    // TODO: Add at() (non-const version)
-    T& at(std::size_t index) {
-      if (index >= N)
-        throw std::out_of_range("Invalid StaticArray access.");
+  // TODO: Add operator[] (non-const version)
+  T& operator[](std::size_t index) { return m_data[index]; }
+  // TODO: Add operator[] (const version)
+  const T& operator[](std::size_t index) const { return m_data[index]; }
+  // TODO: Add at() (non-const version)
+  T& at(std::size_t index) {
+    if (index >= N) throw std::out_of_range("Invalid StaticArray access.");
 
-      return m_data[index];
-    }
-    // TODO: Add at() (const version)
-    const T& at(std::size_t index) const {
-      if (index >= N)
-        throw std::out_of_range("Invalid StaticArray access.");
+    return m_data[index];
+  }
+  // TODO: Add at() (const version)
+  const T& at(std::size_t index) const {
+    if (index >= N) throw std::out_of_range("Invalid StaticArray access.");
 
-      return m_data[index];
-    }
+    return m_data[index];
+  }
 };
 
 int main() {
@@ -49,9 +41,8 @@ int main() {
   arr[4] = 50;
   // TODO: Print "After setting values:" followed by all elements in a loop
   std::cout << "After setting values:";
-  for (std::size_t i {0}; i < arr.size(); ++i)
-    std::cout << ' ' << arr.at(i);
-  
+  for (std::size_t i{0}; i < arr.size(); ++i) std::cout << ' ' << arr.at(i);
+
   // std::cout << arr.at(-1) << ' ';
   // std::cout << arr.at(10) << ' ';
 

@@ -1,24 +1,18 @@
-#include <iostream>
 #include <cstddef>
+#include <iostream>
 #include <stdexcept>
 
-template<typename T, std::size_t N>
+template <typename T, std::size_t N>
 class StaticArray {
-private:
+ private:
   T m_data[N];
 
-public:
-  constexpr std::size_t size() const {
-    return N;
-  }
+ public:
+  constexpr std::size_t size() const { return N; }
 
-  T& operator[](std::size_t index) {
-    return m_data[index];
-  }
+  T& operator[](std::size_t index) { return m_data[index]; }
 
-  const T& operator[](std::size_t index) const {
-    return m_data[index];
-  }
+  const T& operator[](std::size_t index) const { return m_data[index]; }
 
   T& at(std::size_t index) {
     if (index >= N) {
@@ -36,30 +30,22 @@ public:
 
   // TODO: Add fill()
   void fill(T default_value) {
-    for (size_t i {0}; i < N; ++i) {
+    for (size_t i{0}; i < N; ++i) {
       m_data[i] = default_value;
     }
   }
 
   // TODO: Add front() (non-const version)
-  T& front() {
-    return m_data[0];
-  }
+  T& front() { return m_data[0]; }
   // TODO: Add front() (const version)
-  const T& front() const {
-    return m_data[0];
-  }
+  const T& front() const { return m_data[0]; }
   // TODO: Add back() (non-const version)
-  T& back() {
-    return m_data[N - 1];
-  }
+  T& back() { return m_data[N - 1]; }
   // TODO: Add back() (const version)
-  const T& back() const {
-    return m_data[N - 1];
-  }
+  const T& back() const { return m_data[N - 1]; }
   // TODO: Add find()
   const int find(T value) const {
-    for (std::size_t i {0}; i < N; ++i) {
+    for (std::size_t i{0}; i < N; ++i) {
       if (m_data[i] == value) {
         return i;
       }
@@ -68,7 +54,6 @@ public:
     return -1;
   }
 };
-
 
 int main() {
   StaticArray<int, 5> arr;
