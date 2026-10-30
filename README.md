@@ -10,7 +10,7 @@ A collection of projects regarding data structures and algorithms written in C++
 | -- | --------- | ------------------------------------------ | --------------- |
 | 01 | Static Array | Fixed-size contiguous memory allocation with O(1) random access.  | ✅ Completed   |
 | 02 | Dynamic Array | Resizable array with amortized O(1) insertion at the end. Foundation of std::vector | ✅ Completed |
-| 03 | Single Linked List | Linear data structure with nodes containing data and a next pointer.  | 🚧 In progress |
+| 03 | Single Linked List | Linear data structure with nodes containing data and a next pointer.  | ✅ Completed |
 <!-- | 04 | — | —     | —                                           | 🚧 In progress |
 | 05 | — | —     | —                                           | ⏳ Planned     |
 | 06 | — | —     | —                                           | ⏳ Planned     |
