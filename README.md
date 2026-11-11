@@ -14,7 +14,9 @@ A collection of projects regarding data structures and algorithms written in C++
 | 04 | Stack | LIFO (Last In First Out) data structure with push and pop operations. | ✅ Completed |
 | 05 | Queue | FIFO (First In First Out) data structure with enqueue and dequeue operations. | ✅ Completed |
 | 06 | Linear Search | Sequential search through all elements. O(n) time complexity. | ✅ Completed |
-| 07 | Binary Search | Divide and conquer search on sorted data. O(log n) time complexity. | 🚧 In progress |
+| 07 | Binary Search | Divide and conquer search on sorted data. O(log n) time complexity. | ✅ Completed |
+<!-- |  |  | | 🚧 In progress | -->
+<!-- |  |  | | ⏳ Planned | -->
 <!-- |  |  | | ⏳ Planned | -->
 
 [Projects credits](https://www.hellocpp.dev/data-structures-algorithms)
