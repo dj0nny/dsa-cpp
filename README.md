@@ -18,6 +18,7 @@ A collection of projects regarding data structures and algorithms written in C++
 <!-- |  |  | | 🚧 In progress | -->
 <!-- |  |  | | ⏳ Planned | -->
 <!-- |  |  | | ⏳ Planned | -->
+<!-- |  |  | | ⏳ Planned | -->
 
 [Projects credits](https://www.hellocpp.dev/data-structures-algorithms)
 
